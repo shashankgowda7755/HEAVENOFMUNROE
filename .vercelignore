@@ -1,0 +1,34 @@
+# Server-side files (not needed for Vercel deployment)
+server/
+migrations/
+seed.ts
+drizzle.config.ts
+
+# Development and documentation files
+.env.example
+.env.local
+README.md
+DEPLOYMENT.md
+DEPLOYMENT_INSTRUCTIONS.md
+README_DEPLOYMENT.md
+VERCEL_AUTH_FIX.md
+VERCEL_DEPLOYMENT_GUIDE.md
+VERCEL_V6_DEPLOYMENT_GUIDE.md
+fix-auth.js
+railway.json
+
+# Local development files
+.replit
+.replit.nix
+
+# Progress tracking
+.local/
+
+# Node modules and build artifacts (handled by Vercel)
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# TypeScript build info
+*.tsbuildinfo
