@@ -5,12 +5,14 @@ const API_CACHE = 'api-v2';
 
 const urlsToCache = [
   '/',
-  '/inquiry',
+  '/index.html',
   '/manifest.json',
   '/images/logoon.png',
-  '/apple-touch-icon.svg',
-  '/icon-192x192.svg',
-  '/icon-512x512.svg'
+  '/static/js/main.chunk.js',
+  '/static/js/0.chunk.js',
+  '/static/js/bundle.js',
+  '/static/css/main.chunk.css',
+  '/favicon.ico'
 ];
 
 // Install event - cache resources
