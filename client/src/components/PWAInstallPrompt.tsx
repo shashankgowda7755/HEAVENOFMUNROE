@@ -130,20 +130,8 @@ export default function PWAInstallPrompt() {
         sessionStorage.setItem('pwa-install-dismissed', 'true');
       }
     } else {
-      // Show manual installation instructions
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      const isChrome = /Chrome/.test(navigator.userAgent);
-      
-      let instructions = '';
-      if (isIOS) {
-        instructions = 'To install this app on iOS: Tap the Share button in Safari, then tap "Add to Home Screen"';
-      } else if (isChrome) {
-        instructions = 'To install this app: Click the three dots menu in Chrome, then select "Install Heaven of Munroe"';
-      } else {
-        instructions = 'To install this app: Look for an install option in your browser\'s menu or address bar';
-      }
-      
-      alert(instructions);
+      // For browsers that don't support beforeinstallprompt
+      // Just hide the banner without showing alert
       setShowPrompt(false);
       setSessionDismissed(true);
       setInstallBannerVisible(false);
