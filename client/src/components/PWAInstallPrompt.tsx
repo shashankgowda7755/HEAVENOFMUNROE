@@ -180,8 +180,13 @@ export default function PWAInstallPrompt() {
     >
       <div className="container mx-auto flex items-center justify-between max-w-screen-xl">
         <div className="flex items-center space-x-3">
-          <div className="bg-white/20 p-2 rounded-lg">
-            <Smartphone className="w-5 h-5" />
+          <div className="bg-white p-1 rounded-lg">
+            <img 
+              src="/images/logo.png" 
+              alt="Heaven of Munroe Logo" 
+              className="w-10 h-10 object-contain" 
+              loading="eager"
+            />
           </div>
           <div>
             <p className="font-semibold text-sm">
