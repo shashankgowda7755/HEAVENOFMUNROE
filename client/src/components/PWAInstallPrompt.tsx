@@ -182,7 +182,7 @@ export default function PWAInstallPrompt() {
         <div className="flex items-center space-x-3">
           <div className="bg-white p-1 rounded-lg">
             <img 
-              src="/images/logo.png" 
+              src="/images/logoon.png" 
               alt="Heaven of Munroe Logo" 
               className="w-10 h-10 object-contain" 
               loading="eager"
