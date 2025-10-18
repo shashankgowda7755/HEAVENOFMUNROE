@@ -26,7 +26,8 @@ railway.json
 
 # Node modules and build artifacts (handled by Vercel)
 node_modules/
-dist/
+# Do NOT ignore dist/public (Vercel output)
+# Keep other dist subfolders ignored if any
 *.log
 .DS_Store
 
