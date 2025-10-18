@@ -3,7 +3,7 @@
   "public": true,
   "buildCommand": "npm run vercel-build",
   "outputDirectory": "dist/public",
-  "installCommand": "npm install",
+  "installCommand": "npm ci --ignore-scripts",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.ts" },
     { "source": "/assets/(.*)", "destination": "/assets/$1" },
