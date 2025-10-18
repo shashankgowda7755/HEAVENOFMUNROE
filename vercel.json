@@ -6,15 +6,11 @@
   "installCommand": "npm install",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.ts" },
-
-    // Preserve static assets (do NOT rewrite these)
     { "source": "/assets/(.*)", "destination": "/assets/$1" },
     { "source": "/images/(.*)", "destination": "/images/$1" },
     { "source": "/icons/(.*)", "destination": "/icons/$1" },
     { "source": "/manifest.json", "destination": "/manifest.json" },
     { "source": "/sw.js", "destination": "/sw.js" },
-
-    // SPA client-side routes
     { "source": "/", "destination": "/index.html" },
     { "source": "/inquiry", "destination": "/index.html" }
   ],
