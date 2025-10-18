@@ -153,13 +153,13 @@ export default function Services() {
                 Need Personalized Guidance?
               </h3>
               <p className="text-gray-600">
-                Let our local experts help you choose the perfect experience for your Kerala adventure
+                Let our local experts help you choose the perfect journey for your Kerala adventure
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
-                onClick={() => window.open("https://api.whatsapp.com/send?phone=919633836839&text=Hi! I need help choosing the right package for my Kerala backwater experience", '_blank')}
+                onClick={() => window.open("https://api.whatsapp.com/send?phone=919633836839&text=Hi! I need help choosing the right package for my Kerala backwater journey", '_blank')}
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-700 transform hover:scale-110 hover:shadow-2xl hover:-translate-y-2 active:scale-95 water-ripple cursor-glow breathing-scale"
                 data-testid="button-get-help"
               >

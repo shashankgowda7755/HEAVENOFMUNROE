@@ -35,7 +35,7 @@ export default function InquiryPage() {
       <section className="bg-blue-600 text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-            Book Your Heaven of Munroe Experience
+            Book Your Heaven of Munroe Journey
           </h1>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Fill out the form below to begin your booking process. We'll get back to you quickly to confirm your reservation.

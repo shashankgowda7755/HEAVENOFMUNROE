@@ -89,7 +89,7 @@ export default function BookingForm() {
               Plan Your Perfect Getaway
             </h3>
             <p className="text-xl text-primary-foreground/80">
-              Let us create a personalized itinerary for your Munroe Island experience
+              Let us create a personalized itinerary for your Munroe Island journey
             </p>
           </div>
           

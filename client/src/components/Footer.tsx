@@ -33,12 +33,12 @@ export default function Footer() {
               </div>
               <div>
                 <h4 className="font-serif font-bold text-2xl">Heaven of Munroe</h4>
-                <p className="text-sm opacity-70">Authentic Kerala Backwater Experience</p>
+                <p className="text-sm opacity-70">Authentic Kerala Backwaters</p>
               </div>
             </div>
             
             <p className="text-background/70 mb-6 leading-relaxed">
-              Experience authentic Kerala backwaters at Munroe Island.
+              Enjoy authentic Kerala backwaters at Munroe Island.
             </p>
             
             <div className="flex space-x-4">

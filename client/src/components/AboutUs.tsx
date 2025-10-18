@@ -29,6 +29,11 @@ export default function AboutUs() {
     queryKey: ['/api/content-sections', 'about-mission'],
     queryFn: getQueryFn({ on401: "returnNull" }),
   });
+  
+  const { data: teamContent } = useQuery<ContentSection | null>({
+    queryKey: ['/api/content-sections', 'about-team'],
+    queryFn: getQueryFn({ on401: "returnNull" }),
+  });
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -59,9 +64,10 @@ export default function AboutUs() {
                     <h4 className="font-semibold text-lg">Recognition</h4>
                   </div>
                   <p className="text-muted-foreground">
-                    Kerala Tourism Board certified and recognized for sustainable tourism practices 
+                    Recognized for sustainable tourism practices 
                     and authentic cultural experiences.
-                  </p>
+                   </p>
+                 </div>
                 </div>
               </div>
             </div>
@@ -115,76 +121,11 @@ export default function AboutUs() {
         );
         
       case 'team':
+        // Entire Team section removed per user request
         return (
           <div className="space-y-6">
             <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Meet Our Family</h3>
-            <div className="grid lg:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <img 
-                    src={aboutContent?.hostImage || "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"}
-                    alt="Evan - Lead Host and Guide"
-                    className="w-24 h-24 rounded-full object-cover shadow-lg"
-                    loading="lazy"
-                  />
-                  <div>
-                    <h4 className="font-serif text-xl font-bold">Evan - Lead Host & Guide</h4>
-                    <p className="text-muted-foreground mb-2">Founder & Cultural Ambassador</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Born and raised on Munroe Island, Evan brings over 20 years of local expertise. 
-                      His deep knowledge of the ecosystem, cultural traditions, and multilingual abilities 
-                      make every journey both educational and memorable.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-100 to-teal-100 rounded-full flex items-center justify-center">
-                    <Users className="text-blue-600" size={32} />
-                  </div>
-                  <div>
-                    <h4 className="font-serif text-xl font-bold">Local Guides Team</h4>
-                    <p className="text-muted-foreground mb-2">Native Island Experts</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Our team of local guides includes fishermen, coir artisans, and village elders 
-                      who share authentic stories and traditional knowledge passed down through generations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="bg-blue-50 p-6 rounded-xl">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <Globe className="text-blue-600" size={24} />
-                    <h4 className="font-semibold">Languages Spoken</h4>
-                  </div>
-                  <p className="text-muted-foreground">
-                    {aboutContent?.languages || "English, Hindi, Malayalam, Tamil"}
-                  </p>
-                </div>
-                
-                <div className="bg-green-50 p-6 rounded-xl">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <Award className="text-green-600" size={24} />
-                    <h4 className="font-semibold">Certifications</h4>
-                  </div>
-                  <p className="text-muted-foreground">
-                    {aboutContent?.certifications || "Kerala Tourism Board Approved, First Aid Certified, Eco-Tourism Trained"}
-                  </p>
-                </div>
-                
-                <div className="bg-yellow-50 p-6 rounded-xl">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <Star className="text-yellow-600" size={24} />
-                    <h4 className="font-semibold">Experience</h4>
-                  </div>
-                  <p className="text-muted-foreground">
-                    8+ years in sustainable tourism, 500+ happy families served, 98% guest satisfaction rate
-                  </p>
-                </div>
-              </div>
-            </div>
+            {/* Team content removed per user request: Evan, Local Guides, Languages, Certifications, Experience */}
           </div>
         );
         
@@ -273,10 +214,11 @@ export default function AboutUs() {
                 <div className="bg-blue-50 p-6 rounded-xl">
                   <h4 className="font-serif text-lg font-bold mb-4">Awards & Recognition</h4>
                   <div className="space-y-2 text-sm">
-                    <p>🏆 Kerala Responsible Tourism Award 2022</p>
-                    <p>🌱 Sustainable Tourism Excellence 2021</p>
-                    <p>⭐ TripAdvisor Certificate of Excellence</p>
-                    <p>📋 Kerala Tourism Board Certification</p>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>🏆 Kerala Responsible Tourism Award 2022</li>
+                      <li>🌱 Sustainable Tourism Excellence 2021</li>
+                      <li>⭐ TripAdvisor Certificate of Excellence</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -309,7 +251,7 @@ export default function AboutUs() {
             {[
               { key: 'story', label: 'Our Story', icon: Anchor },
               { key: 'location', label: 'Location', icon: MapPin },
-              { key: 'team', label: 'Our Team', icon: Users },
+              // Team tab removed per user request
               { key: 'mission', label: 'Mission', icon: Heart }
             ].map(({ key, label, icon: Icon }) => (
               <button

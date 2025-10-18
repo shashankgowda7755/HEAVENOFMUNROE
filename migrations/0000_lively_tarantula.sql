@@ -9,7 +9,7 @@ CREATE TABLE "about_content" (
 	"expanded_text_1" text DEFAULT 'Evan''s expertise extends beyond boating - he''s also a certified local guide, traditional chef, and cultural ambassador for Munroe Island. His multilingual abilities ensure comfortable communication with guests from around the world.',
 	"expanded_text_2" text DEFAULT 'The business started as a family tradition, passed down through generations of fishermen and boat builders. Today, Evan combines this heritage with modern hospitality standards to create unforgettable experiences.',
 	"languages" text DEFAULT 'English, Hindi, Malayalam' NOT NULL,
-	"certifications" text DEFAULT 'Tourism Board Approved' NOT NULL,
+	"certifications" text DEFAULT 'First Aid Certified, Eco-Tourism Trained' NOT NULL,
 	"is_active" boolean DEFAULT true NOT NULL,
 	"updated_at" timestamp DEFAULT now() NOT NULL
 );

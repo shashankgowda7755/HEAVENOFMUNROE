@@ -83,7 +83,7 @@
           "type": "text",
           "primaryKey": false,
           "notNull": true,
-          "default": "'Tourism Board Approved'"
+          "default": "'First Aid Certified, Eco-Tourism Trained'"
         },
         "is_active": {
           "name": "is_active",

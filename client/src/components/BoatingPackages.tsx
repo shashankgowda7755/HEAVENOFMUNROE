@@ -27,7 +27,7 @@ export default function BoatingPackages() {
       duration: "",
       price: "₹1200 - 3000",
       originalPrice: "",
-      description: "Authentic Kerala boathouse experience through pristine backwaters with expert local guides astamidi river",
+      description: "Authentic Kerala boathouse journey through pristine backwaters with expert local guides astamidi river",
       features: [
         "Traditional Kerala boathouse ride",
         "Experienced local boat captain",
@@ -46,7 +46,7 @@ export default function BoatingPackages() {
     {
       id: "lake-foods",
       packageId: "lake-foods",
-      title: "Lake Foods Experience",
+      title: "Lake Foods Package",
       duration: "",
       price: "₹600 - 1500",
       originalPrice: "",
@@ -61,7 +61,7 @@ export default function BoatingPackages() {
       ],
       image: "/images/food.jpg",
       isPopular: true,
-      whatsappLink: "https://api.whatsapp.com/send?phone=919633836839&text=Hi! I want to book Lake Foods Experience package",
+      whatsappLink: "https://api.whatsapp.com/send?phone=919633836839&text=Hi! I want to book Lake Foods Package",
       sortOrder: 3,
       isActive: true,
       createdAt: new Date(),
@@ -120,7 +120,7 @@ export default function BoatingPackages() {
       duration: "Per Night",
       price: "₹1800 - 3000",
       originalPrice: "",
-      description: "Comfortable overnight stay in traditional Kerala homes with warm hospitality and authentic experiences",
+      description: "Comfortable overnight stay in traditional Kerala homes with warm hospitality and authentic activities",
       features: [
         "Clean, comfortable rooms",
         "Traditional Kerala architecture",
@@ -180,7 +180,7 @@ export default function BoatingPackages() {
             Premium Boating Packages
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Choose from our carefully crafted experiences designed to showcase the best of Munroe Island
+            Choose from our carefully crafted adventures designed to showcase the best of Munroe Island
           </p>
         </div>
 
@@ -308,7 +308,7 @@ export default function BoatingPackages() {
               Need a Custom Package?
             </h3>
             <p className="text-gray-600 mb-6">
-              We can create personalized experiences based on your preferences, group size, and special requirements.
+              We can create personalized journeys based on your preferences, group size, and special requirements.
             </p>
             <button 
               onClick={() => window.open("https://api.whatsapp.com/send?phone=919633836839&text=Hi! I need a custom boating package", '_blank', 'noopener,noreferrer')}
