@@ -18,6 +18,7 @@ export default defineConfig({
       "react": path.resolve(__dirname, "node_modules", "react"),
       "react-dom": path.resolve(__dirname, "node_modules", "react-dom"),
     },
+    dedupe: ["react", "react-dom"],
   },
   root: path.resolve(__dirname, "client"),
   build: {
@@ -35,6 +36,12 @@ export default defineConfig({
     fs: {
       strict: true,
       deny: ["**/.*"],
+    },
+    hmr: {
+      host: "localhost",
+      port: 5173,
+      clientPort: 5173,
+      protocol: "ws",
     },
   },
 });
