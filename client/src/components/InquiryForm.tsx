@@ -198,7 +198,7 @@ export default function InquiryForm({ selectedPackage, onClose, onSuccess }: Inq
       <CardHeader className="bg-gradient-to-r from-blue-50 to-green-50 rounded-t-lg">
         <CardTitle className="text-2xl font-serif text-center text-blue-600">
           <i className="fas fa-ship mr-2"></i>
-          Book Your Experience
+          <h2 className="text-3xl font-bold">Book Your Journey</h2>
         </CardTitle>
         <p className="text-center text-gray-600">
           Fill in your details to make a booking inquiry

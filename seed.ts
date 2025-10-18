@@ -28,7 +28,7 @@ async function seed() {
       expandedText1: "Evan's expertise extends beyond boating - he's also a certified local guide, traditional chef, and cultural ambassador for Munroe Island. His multilingual abilities ensure comfortable communication with guests from around the world.",
       expandedText2: "The business started as a family tradition, passed down through generations of fishermen and boat builders. Today, Evan combines this heritage with modern hospitality standards to create unforgettable experiences.",
       languages: "English, Hindi, Malayalam",
-      certifications: "Tourism Board Approved"
+      certifications: "First Aid Certified, Eco-Tourism Trained",
     };
     await storage.updateAboutContent(aboutData);
     console.log("✓ About content seeded");

@@ -88,7 +88,7 @@ export default function MunroeIslandDescription() {
               </div>
               <h4 className="font-serif text-xl font-bold mb-3">Traditional Villages</h4>
               <p className="text-muted-foreground">
-                Experience authentic Kerala village life with traditional fishing, coir making, and local hospitality.
+                Discover authentic Kerala village life with traditional fishing, coir making, and local hospitality.
               </p>
             </div>
 
@@ -130,7 +130,7 @@ export default function MunroeIslandDescription() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="text-yellow-400 mt-1" size={20} />
-                    <p>Authentic cultural experiences and local crafts</p>
+                    <p>Authentic cultural activities and local crafts</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="text-yellow-400 mt-1" size={20} />

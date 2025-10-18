@@ -18,7 +18,7 @@ export default function ContactSection() {
             Find Your Way to Paradise
           </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Located in the heart of Munroe Island, we're here to welcome you to an unforgettable Kerala backwater experience
+            Located in the heart of Munroe Island, we're here to welcome you to an unforgettable Kerala backwater journey
           </p>
         </div>
         
@@ -55,8 +55,7 @@ export default function ContactSection() {
                   <div>
                     <h5 className="font-semibold mb-1">Phone & WhatsApp</h5>
                     <p className="text-muted-foreground">
-                      <a href="tel:+919847012345" className="hover:text-secondary transition-colors">+91 98470 12345</a><br />
-                      <a href="tel:+919447067890" className="hover:text-secondary transition-colors">+91 94470 67890</a>
+                      <a href="tel:+919633836839" className="hover:text-secondary transition-colors">+91 96338 36839</a>
                     </p>
                   </div>
                 </div>

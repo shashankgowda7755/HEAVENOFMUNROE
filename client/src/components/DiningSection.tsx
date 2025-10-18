@@ -99,7 +99,7 @@ export default function DiningSection() {
               <div className="bg-accent/10 rounded-2xl p-6 border border-accent/20">
                 <h4 className="font-serif text-xl font-bold text-foreground mb-3 flex items-center">
                   <i className="fas fa-star text-accent mr-3"></i>
-                  Chef's Dining Experience
+                  <h3 className="text-2xl font-semibold">Chef's Dining</h3>
                 </h4>
                 <p className="text-muted-foreground mb-4">
                   Join our family for a complete culinary journey. Watch traditional cooking methods, learn family recipes, and enjoy a feast together.
@@ -114,7 +114,7 @@ export default function DiningSection() {
                         element.scrollIntoView({ behavior: "smooth" });
                       }
                     }}
-                    data-testid="button-reserve-experience"
+                    data-testid="button-reserve-dining"
                   >
                     Reserve Experience
                   </button>
